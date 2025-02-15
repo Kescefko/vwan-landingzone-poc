@@ -12,9 +12,9 @@ variable "vwan_name" {
 }
 
 variable "vhub_name" {
-  default = "poc-vhub"
+  default = "hub_suinorth"
 }
 
 variable "vnet_name" {
-  default = "poc-vnet"
+  default = "vnet-gyorgy-shared-dev-sn"
 }
