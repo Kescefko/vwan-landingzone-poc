@@ -1,3 +1,3 @@
 data "azurerm_resource_group" "rg" {
-  name = "rg-gyorgy-shared-dev"
+  name = var.resource_group_name
 }

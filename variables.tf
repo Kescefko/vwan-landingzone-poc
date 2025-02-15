@@ -1,5 +1,5 @@
 variable "resource_group_name" {
-  default = "poc-rg"
+  default = "rg-gyorgy-shared-dev"
 }
 variable "vwan_name" {
   default = "poc-vwan"
