@@ -18,3 +18,7 @@ variable "vhub_name" {
 variable "vnet_name" {
   default = "vnet-gyorgy-shared-dev-sn"
 }
+
+variable "firewall_hub_suinorth_name" {
+  default = "fw-huvb_suinorth"
+}
