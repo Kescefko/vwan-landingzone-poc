@@ -3,7 +3,7 @@ resource "azurerm_firewall" "firewall_hub_suinorth" {
 
   name = var.firewall_hub_suinorth_name
   resource_group_name = var.resource_group_name
-  location = data.azurerm_resource_group.rg.location
+  location = var.location
 
   sku_name = "AZFW_Hub"
   sku_tier = "Premium"
@@ -16,7 +16,7 @@ resource "azurerm_firewall" "firewall_hub_suinorth" {
 # policy
 resource "azurerm_firewall_policy" "firewall_hub_suinorth_policy" {
   name = "firewall_hub_suinorth_policy"
-  location = data.azurerm_resource_group.rg.location
+  location = var.location
   resource_group_name = data.azurerm_resource_group.rg.name
 }
 

@@ -7,6 +7,10 @@ variable "resource_group_name" {
   default = "rg-gyorgy-shared-dev"
 }
 
+variable "location" {
+  default = "Switzerland North"
+}
+
 variable "vwan_name" {
   default = "poc-vwan"
 }
