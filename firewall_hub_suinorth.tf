@@ -17,7 +17,7 @@ resource "azurerm_firewall" "firewall_hub_suinorth" {
 resource "azurerm_firewall_policy" "firewall_hub_suinorth_policy" {
   name = "firewall_hub_suinorth_policy"
   location = var.location
-  resource_group_name = data.azurerm_resource_group.rg.name
+  resource_group_name = azurerm_resource_group.rg.name
 }
 
 # rules
